@@ -1,0 +1,24 @@
+# Object files
+*.o
+
+# Executable files
+*.out
+*.exe
+
+# Debug files
+*.gdb
+
+# Compressed files
+*.zip
+*.tar
+*.gz
+
+# Editor files
+.vscode/
+.idea/
+
+# Backup files
+*~
+*.swp
+
+
