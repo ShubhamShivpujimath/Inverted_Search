@@ -1,189 +1,90 @@
-# 🔍 Inverted Search
+# 🔎 Inverted Search
 
-A C-based implementation of an **Inverted Search Engine** that builds an inverted index from multiple text files, enabling fast and efficient keyword searching. This project demonstrates core concepts of **Data Structures**, **Hashing**, **Linked Lists**, **Dynamic Memory Allocation**, and **File Handling** in C.
+## 📌 Description
 
----
+Inverted Search is a **C-based file indexing and searching application**.
 
-## 📌 Table of Contents
+The project creates an inverted index from multiple text files. Words are extracted from the files and stored along with information about the files in which they occur. The generated index can then be used to search for a word efficiently.
 
-* Overview
-* Features
-* Technologies Used
-* Project Structure
-* How It Works
-* Compilation
-* Execution
-* Sample Output
-* Learning Outcomes
-* Author
+## 🚀 Features
 
----
-
-## 📖 Overview
-
-An **Inverted Search** is a search technique that maps each unique word to the files in which it appears. Instead of scanning every file during a search, the program first creates an inverted index, allowing words to be located quickly and efficiently.
-
-This project accepts multiple text files as input, creates an indexed database, and provides options to search, display, save, and update the database.
-
----
-
-## ✨ Features
-
-* Create an inverted index from multiple text files.
-* Validate input files before indexing.
-* Efficient searching using hashing.
-* Display the complete indexed database.
-* Save the database to a file.
-* Update the database from a previously saved file.
-* Modular and well-structured implementation.
-* Fast keyword lookup.
-
----
+* Create an inverted index from multiple text files
+* Search for a word in the indexed files
+* Display the files containing the searched word
+* Display the number of occurrences of a word
+* Update the index with additional files
+* Display the complete inverted index
+* Save the index for later use
 
 ## 🛠️ Technologies Used
 
-* C Programming
-* Data Structures
-* Hash Tables
-* Linked Lists
-* Dynamic Memory Allocation
-* File Handling
-* GCC Compiler
-* Makefile
-* Linux
+* **Language:** C
+* **Compiler:** GCC
+* **Platform:** Linux
+* **Concepts:** File Handling, Linked Lists, Hashing, Dynamic Memory Allocation
 
----
+## 🧠 Concepts Demonstrated
+
+* Structures
+* Pointers
+* Dynamic Memory Allocation
+* Linked Lists
+* Hashing
+* File Handling
+* String Manipulation
+* Command Line Arguments
+* Modular Programming
 
 ## 📂 Project Structure
 
-```text
-Inverted_Search/
-│
-├── main.c
-├── create_database.c
-├── display_database.c
-├── file_validation.c
-├── hash_function.c
-├── insert_last.c
-├── save_database.c
-├── search.c
-├── update_database.c
-├── inverted_Search.h
-├── Makefile
-├── file1.txt
-├── file2.txt
-└── README.md
-```
+The project is divided into modules for:
 
----
+* File validation
+* Database creation
+* Word insertion
+* Searching
+* Displaying the database
+* Updating the database
+* Saving the database
 
-## ⚙️ How It Works
-
-1. Read multiple text files.
-2. Validate the files.
-3. Extract every word from each file.
-4. Generate a hash key based on the first character.
-5. Store words in a hash table.
-6. Maintain file names and occurrence counts using linked lists.
-7. Search any word in constant average time.
-8. Save or reload the database whenever required.
-
----
-
-## 🚀 Compilation
-
-Using Makefile:
+## ⚙️ How to Compile
 
 ```bash
-make
+gcc *.c
 ```
 
-Or compile manually:
+## ▶️ How to Run
 
 ```bash
-gcc *.c -o inverted_search
+./a.out
 ```
 
----
+Follow the options provided by the application to create, search, display, update, or save the inverted index.
 
-## ▶️ Execution
-
-```bash
-./inverted_search file1.txt file2.txt
-```
-
-You can provide multiple text files as command-line arguments.
-
----
-
-## 📋 Menu
+## 💡 Example
 
 ```text
-------------- MENU -------------
+Enter the word to search: hello
 
-1. Create Database
-2. Display Database
-3. Search
-4. Save Database
-5. Update Database
-6. Exit
+Word: hello
+File: file1.txt
+Occurrences: 3
+
+File: file2.txt
+Occurrences: 2
 ```
 
----
+## 📚 What I Learned
 
-## 📸 Sample Output
+Through this project, I gained practical experience with:
 
-```text
-------------- MENU -------------
+* Implementing data structures in C
+* Working with pointers and dynamic memory
+* Managing files using C file-handling functions
+* Building a word-indexing system
+* Searching data using an indexed structure
+* Organizing a larger C project into multiple modules
 
-1. Create Database
-2. Display Database
-3. Search
-4. Save Database
-5. Update Database
-6. Exit
+## 🎯 Key Skills
 
-Enter your choice : 1
-
-Database created successfully.
-
-Enter your choice : 3
-
-Enter the word to search : embedded
-
-Word Found!
-
-File Name : file1.txt
-Word Count : 5
-```
-
----
-
-## 🎯 Learning Outcomes
-
-This project helped in understanding:
-
-* Hash Tables
-* Linked Lists
-* File Processing
-* Dynamic Memory Allocation
-* Searching Algorithms
-* Data Structures in C
-* Modular Programming
-* Makefile Usage
-
----
-
-## 👨‍💻 Author
-
-**Shubham Shivpujimath**
-
-**GitHub:** https://github.com/ShubhamShivpujimath
-
-**LinkedIn:** https://www.linkedin.com/in/shubham-shivapujimath-063b79208
-
----
-
-## ⭐ Support
-
-If you found this project useful, please consider giving it a **Star ⭐** on GitHub.
+**C Programming • Data Structures • Linked Lists • Hashing • File Handling • Pointers • Dynamic Memory Allocation**
